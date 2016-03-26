@@ -13,4 +13,45 @@
     <div class="container">
       <h1>Welcome to Heather's Movie Theater!</h1>
       <h2>Please select an option from each of the 3 sections below to find out how much your movie ticket will be.</h2>
-      
+      <form id="new-ticket">
+        <div class="form-group">
+          <label for="new-movie-name">MOVIE:</label>
+          <select name="new-movie-name" id="new-movie-name">
+            <option value="starwarsforceawakens">Star Wars: The Force Awakens</option>
+            <option value="rockyhorrorpictureshow">Rocky Horror Picture Show</option>
+            <option value="hitchhikersguidetothegalaxy">Hitchhikers Guide to the Galaxy</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="new-movie-time">TIME:</label>
+          <select name="new-movie-time" id="new-movie-time">
+            <option value="time1">Before 3:00pm</option>
+            <option value="time2">After 3:00pm</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="new-age-selection">AGE:</label>
+          <select name="new-age-selection" id="new-age-selection">
+            <option value="adult">Adult</option>
+            <option value="child">Child 12 and under</option>
+            <option value="senior">Senior 65+</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Purchase!</button>
+      </form>
+
+      <h2>Tickets:</h2>
+      <ul id="movie">
+
+      </ul>
+
+      <div class="col-md-6">
+        <div id="show-ticket">
+          <h2></h2>
+        </div>
+      </div>    
+
+    </div>
+  </body>
+</html>
